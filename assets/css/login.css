@@ -12,6 +12,7 @@ body {
   width: 400px;
   height: 310px;
   background-color: #fff;
+  padding: 0 30px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -21,4 +22,15 @@ body {
 .title-box {
   height: 60px;
   background: url('/assets/images/login_title.png') no-repeat center;
+}
+#regarea {
+    display: none;
+}
+#loginlink,#reglink {
+    float: right;
+    margin-top: 20px;
+    font-size: 12px;
+}
+a {
+    transition: none!important;
 }
