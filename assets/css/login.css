@@ -31,6 +31,7 @@ body {
     margin-top: 20px;
     font-size: 12px;
 }
+/* 去除所有layui自带的a标签过渡动画 */
 a {
     transition: none!important;
 }
