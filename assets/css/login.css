@@ -22,3 +22,11 @@ body {
   height: 60px;
   background: url('/assets/images/login_title.png') no-repeat center;
 }
+#regarea{
+  display: none;
+}
+#loginlink,#reglink {
+  float: right;
+  margin-top: 20px;
+font-size: 12px;
+}

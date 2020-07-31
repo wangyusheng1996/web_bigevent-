@@ -20,7 +20,45 @@
     <!-- 登录注册区域 -->
     <div class="loginAndRegBox">
         <div class="title-box"></div>
+        <!-- 登录区域 -->
+        <form class="layui-form" id="loginarea" action="">
+            <div class="layui-form-item">
+                <input type="text" id="logusername" name="username" required lay-verify="required" placeholder="请输入用户名"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <input type="password" id="logpassword" name="password" required lay-verify="required|psw"
+                    placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+            <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">登录</button>
+            <a href="javascript:;" id="reglink">没有账号?点击注册</a>
+        </form>
+
+        <!-- 注册区域 -->
+        <form class="layui-form" id="regarea" action="">
+            <div class="layui-form-item">
+                <input type="text" id="regusername" name="username" required lay-verify="required" placeholder="请输入用户名"
+                    autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <input type="password" id="regpassword" name="password" required lay-verify="required|psw|repsw"
+                    placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <input type="password" id="repassword" name="repassword" required lay-verify="required|psw|repsw"
+                    placeholder="再次确认密码" autocomplete="off" class="layui-input">
+            </div>
+            <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit lay-filter="formDemo">立即注册</button>
+            <a href="javascript:;" id="loginlink">已经注册?去登录</a>
+        </form>
     </div>
+
+    <!-- 导入login.all.js -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 导入jquery.js  -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入自己的login.js  -->
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
