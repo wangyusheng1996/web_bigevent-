@@ -17,8 +17,10 @@
             </div>
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
-                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <!-- 右侧导航栏上面头像 -->
+                    <a href="javascript:;" class="userinfo">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+                        <span class="text-avatar">A</span>
                         个人中心
                     </a>
                     <dl class="layui-nav-child">
@@ -27,13 +29,19 @@
                         <dd><a href="">重置密码</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">退出</a></li>
+                <li class="layui-nav-item"><a id="btnlogout" href="javascript:;">退出</a></li>
             </ul>
         </div>
 
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <!-- 左侧侧边栏上面头像 -->
+                <div class="userinfo">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img" />
+                    <span class="text-avatar">W</span>
+                    <span id="welcome">欢迎 ***</span>
+                </div>
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all" lay-filter="test">
                     <li class="layui-nav-item layui-this"><a href="">首页</a></li>
                     <li class="layui-nav-item">
@@ -67,7 +75,14 @@
             @ 黑马程序员
         </div>
     </div>
+    <!-- 导入layui.all.js  -->
     <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 导入jquery.js -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入baseAPI.js  -->
+    <script src="/assets/js/baseAPI.JS"></script>
+    <!-- 导入自己的index.js -->
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
